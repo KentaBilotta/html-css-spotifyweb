@@ -23,9 +23,11 @@ aside{
     width: 200px;
     height: 110vh;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
-.header-top{
+.header{
     height: 70px;
     position: relative;
 }
@@ -106,6 +108,79 @@ aside{
 .option:hover{
     color: white;
     cursor: pointer;
+}
+
+.playlist{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+.create{
+    font-size: 2rem;
+}
+
+.playlist-name{
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.download{
+    font-size: 0.7rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-button{
+    width: 25px;
+    color: grey;
+    padding: 5px;
+}
+
+.install{
+    color:rgb(170, 170, 170);
+}
+
+.install:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.aside-bottom{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 180px;
+}
+
+.hr{
+    width: 80%;
+    border-bottom:2px solid rgb(170, 170, 170);
+}
+
+.profile-img{
+    width: 25px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-name{
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .selected{
@@ -242,6 +317,22 @@ aside{
     }
 
     span{
+        display: none;
+    }
+
+    .playlist-name{
+        display: none;
+    }
+
+    .hr{
+        display: none;
+    }
+
+    .create{
+        display: none;
+    }
+
+    .playlist{
         display: none;
     }
 }

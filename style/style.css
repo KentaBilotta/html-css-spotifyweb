@@ -15,13 +15,13 @@ main{
 
 .main-container{
     width: 90%;
-    height: 90vh;
+    height: 110vh;
     background-color: #141922;
 }
 
 aside{
     width: 200px;
-    height: 90vh;
+    height: 110vh;
     background-color: black;
 }
 
@@ -154,34 +154,38 @@ aside{
 .section-name{
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 30px;
+    padding: 5px;
 }
 
 .section-content{
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .album{
     text-align: center;
-    margin-right: 15px;
-    width: 12vw;
+    margin-right: 10px;
+    width: 180px;
     position: relative;
 }
 
 .album-img{
-    width: 12vw;
+    width: 180px;
+    height: 180px;
 }
 
 .album-name{
     font-weight: bold;
     font-size: 0.9rem;
-    margin: 8px;
+    margin: 5px;
     text-transform: capitalize;
 }
 
 .subtitle{
     font-size: 0.8rem;
     color: grey;
+    padding: 5px;
 }
 
 .play-overlay{
@@ -193,7 +197,7 @@ aside{
 
 .play{
     width: 100%;
-    height: 68%;
+    height: 180px;
     position: absolute;
     top: 0;
     left: 0;
@@ -214,9 +218,15 @@ aside{
     cursor: pointer;
 }
 
+.artist{
+    border-radius: 50%;
+}
 
-/* responsive per telefono mobile */
-@media screen and (max-width: 552px){
+.artist:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 551px){
     aside{
         width: 80px;
     }
@@ -236,12 +246,25 @@ aside{
     }
 }
 
-@media screen and (max-width: 878px){
+@media screen and (max-width: 639px){
+
     .album{
-        width: 20vw;
+        width: 40%;
     }
 
     .album-img{
-        width: 18vw;
+        width: 100%;
+        height: 120px;
+    }
+
+    .play{
+        height: 120px;
+    }
+    
+}
+
+@media screen and (max-width: 878px){
+    .album{
+        margin-bottom: 20px;
     }
 }

@@ -15,16 +15,17 @@ main{
 
 .main-container{
     width: 90%;
-    height: 110vh;
+    height: 95vh;
     background-color: #141922;
 }
 
 aside{
     width: 200px;
-    height: 110vh;
+    height: 95vh;
     background-color: black;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .header{
@@ -37,15 +38,6 @@ aside{
     height: 70px;
     background-color: black;
     opacity: 0.3;
-}
-
-.rec-bar{
-    height: 10vh;
-    width: 100vw;
-    background-color: #282828;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 }
 
 .upgrade-button{
@@ -68,9 +60,7 @@ aside{
 }
 
 .aside-head{
-    display: flex;
-    align-items: center;
-    height: 10%;
+    margin-top: 20px;
 }
 
 .logo{
@@ -155,12 +145,10 @@ aside{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: 180px;
 }
 
 .hr{
-    width: 80%;
+    width: 100%;
     border-bottom:2px solid rgb(170, 170, 170);
 }
 
@@ -299,6 +287,178 @@ aside{
 
 .artist:hover{
     cursor: pointer;
+}
+
+.rec-bar{
+    height: 85px;
+    width: 100vw;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar-left{
+    display: flex;
+    width: 25%;
+}
+
+.listening-album{
+    padding: 10px;
+}
+
+.listening-album-img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+.alb-name{
+    font-weight: bold;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.song-name{
+    color: grey;
+    font-size: 0.7rem;
+}
+
+.bar-icons{
+    color: grey;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.bar-icon{
+    padding: 6px;
+}
+
+.bar-icon:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.bar-right{
+    display: flex;
+    align-items: center;
+    width: 18%;
+}
+
+.volume-level{
+    width: 40%;
+    height: 0;
+    border: 2px solid grey;
+    border-radius: 30px;
+    margin-left: 20px;
+    padding: 1px;
+    background-color: grey;
+    position: relative;
+}
+
+.volume-level2{
+    position: absolute;
+    left: -20px;
+    top: -2px;
+    width: 100%;
+    height: 0;
+    border: 2px solid grey;
+    border-radius: 30px;
+    margin-left: 20px;
+    padding: 1px;
+    background-color: grey;
+    opacity: 0;
+}
+
+.volume-level2:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.regulate{
+    width: 35%;
+    border: 3px solid yellowgreen;
+    background-color: yellowgreen;
+    border-radius: 30px;
+    position: relative;
+    top: -3px;
+    left: -4px;
+}
+
+.position{
+    position: absolute;
+    right: 65%;
+    top: -7px;
+}
+
+.bar-center{
+    width: 40%;
+}
+
+.bar-center-top{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin: auto;
+}
+
+.bar-center-bottom{
+    position: relative;
+    top: 5px;
+    padding: 5px;
+}
+
+.music-time{
+    width: 80%;
+    height: 0;
+    border: 2px solid grey;
+    border-radius: 30px;
+    padding: 1px;
+    background-color: grey;
+    position: relative;
+    margin: auto;
+}
+
+.music-time2{
+    position: absolute;
+    left: -20px;
+    top: -2px;
+    width: 100%;
+    height: 0;
+    border: 2px solid grey;
+    border-radius: 30px;
+    margin-left: 20px;
+    padding: 1px;
+    background-color: grey;
+    opacity: 0;
+}
+
+.music-time2:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.time{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.moment{
+    position: relative;
+    top: 15px;
+    left: 50px;
+}
+
+.finish{
+    position: relative;
+    top: 15px;
+    right: 50px;
 }
 
 @media screen and (max-width: 551px){
